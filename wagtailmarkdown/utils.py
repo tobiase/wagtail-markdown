@@ -56,6 +56,7 @@ def _get_bleach_kwargs():
         'strong',
         'ul',
         'sup',
+        'sub',
         'li',
         'dl',
         'dd',
@@ -135,6 +136,8 @@ def _get_markdown_kwargs():
     markdown_kwargs['extensions'] = [
         'extra',
         'codehilite',
+        'superscript',
+        'subscript',
         tables.TableExtension(),
         linker.LinkerExtension({
              '__default__': 'wagtailmarkdown.mdx.linkers.page',
